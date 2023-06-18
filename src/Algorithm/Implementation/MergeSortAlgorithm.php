@@ -14,7 +14,7 @@ class MergeSortAlgorithm implements SortAlgorithmInterface
 
         $count = count($array);
 
-        if ($first = (array_key_first($array) === 0)) {
+        if (($first = array_key_first($array)) === 0) {
             // increment keys
             array_unshift($array, null);
             unset($array[0]);
@@ -54,19 +54,19 @@ class MergeSortAlgorithm implements SortAlgorithmInterface
             $secondArray[$j] = $array[$halfKey + $j];
         }
 
-        $firstArray[] = $secondArray[] = 9999999999999;
-
         $i = $j = 1;
 
         for ($k = $firstKey; $k <= $count; $k++) {
-            if ($firstArray[$i] <= $secondArray[$j]) {
-                $array[$k] = $firstArray[$i];
+            if (array_key_exists($i, $firstArray)) {
+                if (array_key_exists($j, $secondArray) && $firstArray[$i] >= $secondArray[$j]) {
+                    $array[$k] = $secondArray[$j];
 
-                ++$i;
-            } else {
-                $array[$k] = $secondArray[$j];
+                    ++$j;
+                } else {
+                    $array[$k] = $firstArray[$i];
 
-                ++$j;
+                    ++$i;
+                }
             }
         }
 

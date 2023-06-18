@@ -8,7 +8,7 @@ class InsertionSortAlgorithm implements SortAlgorithmInterface
 {
     public function sort(array $array): array
     {
-        for ($i = 1, $count = (count($array) - 1); $i <= $count; ++$i) {
+        for ($i = 1, $count = count($array) - 1; $i <= $count; ++$i) {
             $key = $array[$i];
 
             $j = $i - 1;
