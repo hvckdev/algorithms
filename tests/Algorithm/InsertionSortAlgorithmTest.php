@@ -3,7 +3,7 @@
 namespace App\Tests\Algorithm;
 
 use App\Algorithm\Contracts\SortAlgorithmInterface;
-use App\Algorithm\Implementation\InsertionSortAlgorithm;
+use App\Algorithm\Implementation\SortAlgorithms\InsertionSortAlgorithm;
 use App\Utility\ArrayUtils;
 
 class InsertionSortAlgorithmTest extends \PHPUnit\Framework\TestCase

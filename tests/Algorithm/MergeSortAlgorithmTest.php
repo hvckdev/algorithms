@@ -3,7 +3,7 @@
 namespace App\Tests\Algorithm;
 
 use App\Algorithm\Contracts\SortAlgorithmInterface;
-use App\Algorithm\Implementation\MergeSortAlgorithm;
+use App\Algorithm\Implementation\SortAlgorithms\MergeSortAlgorithm;
 use App\Utility\ArrayUtils;
 use PHPUnit\Framework\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Algorithm\Implementation;
+namespace App\Algorithm\Implementation\SortAlgorithms;
 
 use App\Algorithm\Contracts\SortAlgorithmInterface;
 
