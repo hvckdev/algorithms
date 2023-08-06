@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\Algorithm;
+namespace App\Tests\Algorithm\Implementation\SortAlgorithms;
 
 use App\Algorithm\Contracts\SortAlgorithmInterface;
 use App\Algorithm\Implementation\SortAlgorithms\MergeSortAlgorithm;
